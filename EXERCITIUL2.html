@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+
+ body {background-color: rgb(245, 204, 255);}
+
+h1 {color: rgb(179, 0, 59);
+  text-align: left;
+  font-style: italic;
+  font-family: "verdana";
+  font-size: 40px;}
+
+
+h2 {color: rgb(230, 0, 92);
+  font-family: "courier";
+  font-size: 200%;}
+  
+  
+
+h3 {color:rgb(230, 0, 92);
+  font-family: "courier";
+  font-size: 200%;}
+  
+  img {border-radius: 30px;
+       opacity: 0.8;
+	   }
+p {color:rgb(204, 51, 0);}
+table {background-color:#00ffaa ;}
+
+table, tr, td, ul {border: 2px solid black;}	   
+	   
+</style>
+</head>
+
+<head>
+<script>
+function schimbare()
+{
+document.getElementById("titlu").innerHTML = "Prof. dr. conf. ing. Tomoiaga Alina";
+document.getElementById("titlu").style.fontFamily="Courier";
+document.getElementById("titlu").style.color="rgb(51, 51, 255)";
+document.getElementById("mail").innerHTML="CONTACT:  alinatomoiaga7@gmail.com";
+document.getElementById("mail").style.fontFamily="cooper black";
+document.getElementById("cit").innerHTML="Viitorul meu e minunat!";
+document.getElementById("cit").style.fontSize="35px";
+document.getElementById("cit").style.color="rgb(230, 204, 255)";
+document.getElementById("pas").innerHTML="Idealuri";
+document.getElementById("pas").style.fontFamily="Segoe Script";
+document.getElementById("cite").innerHTML="sa fiu buna in ceea ce fac"
+
+document.getElementById("viz").innerHTML="sa ma dezvolt pe plan personal"
+
+document.getElementById("bic").innerHTML="sa detin un job care sa imi placa"
+
+document.getElementById("ten").innerHTML="sa cunosc cat mai multi oameni"
+
+document.getElementById("imagine").src="ador.jpg";
+document.getElementById("imagine").style.opacity="0.9";
+document.body.style.backgroundColor="rgb(217, 140, 179)";
+
+}
+function varsta()
+{
+var azi=new Date;
+var VarstaMea;
+var anNastere=document.getElementById("varsta").innerHTML;
+var anCurent=azi.getFullYear()
+VarstaMea=anCurent-parseInt(anNastere);
+document.getElementById("varsta").innerHTML=VarstaMea;
+}
+</script>
+</head>
+
+<body>
+
+
+<h1 id="titlu">Tomoiagă Alina Gabriela</h1>
+<p onmouseover="varsta()" id="varsta">2000</p>
+
+<img id="imagine" src="poza.jpg" width="300" height="400">
+
+
+
+<p id="mail">alinatomoiaga7@gmail.com</p>
+<p>0741******</p>
+<center><button type="button" onclick="schimbare()">Alta viata</button><center>
+
+<p id="cit">"Educatia este cea care supravietuieste dupa ce tot ce a fost invatat a fost uitat."-Burrhus Frederic Skinner</p>
+
+
+    <h2>Tabel discipline</h2>
+
+<table style="width:80%">
+  
+ <tr>
+  <td>Programarea calculatoarelor-Limbaje</td>
+  <td>Anul 1</td>
+  <td><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf">Link</a></p></td>
+ </tr>
+ <tr> 
+  <td>Informatica aplicata</td>
+  <td>Anul 1</td>
+  <td><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf">Link</a></p></td>
+ </tr>
+ <tr>
+  <td>Componente si circuite electronice pasive</td>
+  <td>Anul 1</td>
+  <td><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf">Link</a></p></td>
+ </tr>
+</table>
+
+ <h3 id="pas">Pasiuni/Hobby-uri </h3>
+ 
+ <ul>
+  <li id="cite">sa citesc</li>
+  <li id="viz">sa vizionez filme/seriale</li>
+  <li id="bic">sa fac drumetii cu bicicleta</li>
+  <li id="ten">sa joc tenis de masa</li>
+ </ul>
+ 
+ </body>
+ </html>
